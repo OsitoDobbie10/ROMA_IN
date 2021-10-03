@@ -328,8 +328,7 @@ header label{display: block;
                    display: flex;
                    flex-direction: column;
                    height: 1100px;
-                   align-items: center;
-                   border: 1px solid black;}
+                   align-items: center;}
      .objetivos .caja img{width: 200px;
                           height: 200px;
                           border-radius: 10%;}
