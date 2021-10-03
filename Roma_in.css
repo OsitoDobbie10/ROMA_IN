@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+video{position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;}
+.total{
+    margin: auto; 
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+#btn-menu{
+    display: none;
+}
+header{grid-column: 1/13;
+       background: #4E94AB;
+       columns: #f2f2f2;
+       height: 100px;
+       margin-bottom: 0;}
+header h2{text-align: center;
+          color: white;
+          font-size: 25px;}
+header label{display: none;
+             width: 50px;
+             height: 50px;
+             padding: 10px 10px;
+             color: #f2f2f2;
+             border-right: 1px solid white;}
+header label:hover{background: rgba(0,0,0,0.3);
+                   cursor: pointer;}
+.menu ul{margin: 0;
+        list-style: none;
+         padding: 0;
+         display: flex;
+         justify-content:space-evenly;} 
+.menu li a{display: block;
+           color: #f2f2f2;
+           text-decoration: none;
+           padding: 20px 30px;}
+.menu li a:hover{background: rgba(0,0,0,0.3);
+                 cursor: pointer;}
+.contenido{grid-column:1/-1;
+           height: 4140px;
+           border: 1px solid white;
+           background:  #f2f2f2;} 
+
+.contenido .logo{grid-column: 1/-1;
+            height: 400px;}
+.logo img{width: 100%;
+     height: 400px;}
+.contenido .somos{grid-column: 1/-1;
+             background-color: #f2f2f2;
+             color: black;
+             height: 100px;}
+.somos article h2{text-align: center;}
+.somos article p{text-align: justify;}
+.contenido h2{text-align: center;
+         margin-bottom: 10px;
+         margin-top: 5px;
+         margin-bottom: 10px;}
+.propuesta{grid-column: 1/-1;
+           height: 130px;}
+.propuesta p{text-align: justify;}
+.title1{margin-bottom: 10px;}
+.title1 h2{text-align: center;}
+.container-slider{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    /*overflow: hidden;*/
+    box-shadow: 0 0 0 10px black , 
+                0 15px 50px;
+    overflow: hidden;}
+    /*contenedor que almacena todos los contenedores de imagenes*/
+    .slider{
+    display: flex;
+    width: 500%; /*se le da el 400 porque son 4 imagenes*/
+    height: 600px;
+    position: relative;
+    margin-left: -100%;}
+    /*contenedor que contiene todas las imagenes*/
+    .slider_section{
+    width: 100%;
+    }
+    /*imagenes*/
+    .slider_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover; */
+    }
+    /*punter de izquierda y derecha*/
+    .slider_btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255, 0.5);
+    /*top:50%;*/
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+    .slider_btn:hover{
+    background: #ffffff;
+    }
+    .slider_btn--left{
+    left:25% ;
+    
+    }
+    .slider_btn--right{
+    right: 25%;}
+.Integrantes{
+    grid-column: 1/-1;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;}
+.title3{margin-top: 100px;}
+.Integrantes .Titulo2{text-align: center;}
+.Integrantes .imagenes{display: flex;
+                       justify-content: space-evenly;
+                       height: 400px;
+                       margin-top: 20px;}
+.imagenes .img_contenidos img{width: 300px;
+                              height: 300px;
+                              border-radius: 5%;
+                              border: 1px solid yellowgreen;
+                              box-shadow: 0 0 0 1px rgba(112, 179, 35, 0.883) , 
+                              0 15px 50px;}
+.imagenes .img_contenidos{height: 400px;
+                          width: 300px;}
+.imagenes .img_contenidos p{text-align: center;
+                            margin-top: 8px;
+                            font-size: 20px;}
+                            .title_somos{margin-top: 70px;
+                             text-align: center;}                           
+.somos2{grid-column: 1/-1;
+        height: 600px;
+        display: flex;
+        justify-content: center;}
+.somos2 iframe{border: 2px solid yellow;
+               box-shadow: 0 0 0 2px black , 
+               0 5px 20px;}
+.tema_alertas{margin-top: 70px;
+                text-align: center;}
+.Alertas{grid-column: 1/-1;
+         height: 600px;
+         display: flex;
+         justify-content: center;}
+  .Alertas iframe{border: 2px solid yellow;
+      box-shadow: 0 0 0 2px black , 
+      0 15px 50px;} 
+.title3{margin-bottom: 10px;
+        text-align: center;}
+.mapa{grid-column: 1/-1;
+       height: 800px;
+       display: flex;
+       justify-content: center;
+       position: relative;
+       top: 10px;}
+
+.mapa iframe{border: 2px solid yellow;
+              box-shadow: 0 0 0 2px black , 
+              0 2px 20px;}
+.total footer{grid-column: 1/-1;
+            background: rgba(0,0,0,0.3);
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;}
+footer .copeco img{width:200px; height:200px;}
+footer .CEPREDENAC img{width:200px; height:200px;}
+[class^="bx bxl"]{color: #fff;
+                 font-size: 50px;}
+footer .datos_footer{display: flex;
+             flex-direction: column;}
+footer .title{text-align: center;
+             font-size: 25px;}
+footer .datos{width: 400px;
+             height: 100px;
+             display: flex;
+             justify-content:space-evenly;}
+.datos_footer .Nombre{text-align: center;}
+.datos_footer .Nombre p{font-size: 20px;}
+.datos a{display: block;
+         height: 50px;}
+.datos a:hover{background: #4E94AB;}
+
+
+/*responsive*/
+
+@media (max-width:768px){
+    .total{
+        border: 1px solid black;
+        width:100%;
+        height: 5850px; 
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        overflow: hidden;}
+header{grid-column: 1/-1;
+       height: 130px;
+       color:#f2f2f2;}
+header h2{font-size: 15px;}
+header label{display: block;
+             font-size: 25px;} 
+.menu{position: absolute;
+       background:rgba(13, 170, 190, 0.8);
+       width: 80%;
+       margin-left: -90%;
+       transition: all 1s;
+       height: 600px;}
+    .menu ul{flex-direction: column;}
+    .menu li{border-top: 1px solid white;
+             border-bottom: 1px solid white;}
+    #btn-menu:checked ~ .menu{margin: 0;}
+    .contenido{grid-column:1/-1;
+        height: 5420px; 
+        border: 1px solid white; 
+        background:  #f2f2f2;}
+
+.contenido .somos{grid-column: 1/-1;
+            background-color: #f2f2f2;
+            color: black;
+            height: 245px;
+            margin-bottom: 10px;}
+.somos article h2{text-align: center;}
+.somos article p{text-align: justify;}
+.contenido h2{text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;}
+.propuesta{grid-column: 1/-1;
+          height: 360px;
+          margin-bottom: 10px;}
+.propuesta p{text-align: justify;}
+.title1{margin-bottom: 10px;}
+.title1 h2{text-align: center;}
+.container-slider{
+   width: 90%;
+   max-width: 700px;
+   margin: auto;
+   /*overflow: hidden;*/
+   box-shadow: 0 0 0 10px black , 
+               0 15px 50px;
+   overflow: hidden;}
+   /*contenedor que almacena todos los contenedores de imagenes*/
+   .slider{
+   display: flex;
+   width: 500%; /*se le da el 400 porque son 4 imagenes*/
+   height: 500px;
+   position: relative;
+   margin-left: -100%;}
+   /*contenedor que contiene todas las imagenes*/
+   .slider_section{
+   width: 100%;
+   }
+   /*imagenes*/
+   .slider_img{
+   display: block;
+   width: 100%;
+   height: 100%;
+   /*object-fit: cover; */
+   }
+   /*punter de izquierda y derecha*/
+   .slider_btn{
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background: rgba(255,255,255, 0.5);
+   /*top:50%;*/
+   transform: translateY(-50%);
+   font-size: 40px;
+   font-weight: bold;
+   font-family: monospace;
+   text-align: center;
+   border-radius: 50%;
+   cursor: pointer;
+   }
+   .slider_btn:hover{
+   background: #ffffff;
+   }
+   .slider_btn--left{
+   left:2% ;
+   
+   }
+   .slider_btn--right{
+   right: 2%;}
+
+   .Integrantes{
+    grid-column: 1/-1;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;}
+.title3{margin-top: 100px;}
+.Integrantes .Titulo2{text-align: center;}
+.Integrantes .imagenes{display: flex;
+                       flex-direction: column;
+                       height: 1300px;
+                       margin-top: 20px;
+                       align-items: center;}
+.imagenes .img_contenidos img{width: 300px;
+                              height: 300px;
+                              border-radius: 5%;
+                              border: 1px solid yellowgreen;
+                              box-shadow: 0 0 0 1px rgba(112, 179, 35, 0.883) , 
+                              0 15px 50px;}
+.imagenes .img_contenidos{height: 400px;
+                          width: 300px;}
+.imagenes .img_contenidos p{text-align: center;
+                            margin-top: 8px;
+                            font-size: 20px;}
+.title_somos{margin-top: 70px;
+    text-align: center;}                 
+    .total footer{grid-column:1/-1;
+     background: rgba(03);
+    height: 300px;
+     color: white;
+    display: flex;
+     justify-content: space-evenly;
+     align-items: center;}
+     footer .copeco img{width:80px; height:80px;}
+    footer .CEPREDENAC img{width:80px; height:80px;}
+     [class^="bx bxl"]{color: #fff;
+                     font-size: 10px;}
+    footer .datos_footer{display: flex;
+                         flex-direction: column;} 
+    footer .title{text-align: center;
+                 font-size: 15px;}
+     footer .datos{width: 200px;
+                 height: 40px;
+                  display: flex;
+                 justify-content:space-evenly;
+                  margin: auto;}
+                     .datos_footer .Nombre{text-align: center;}
+                     .datos_footer .Nombre p{font-size: 10px;} 
+                    .datos a{display: block;
+                             height: 15px;}
+                    .datos a:hover{background: #4E94AB;}    
+}
